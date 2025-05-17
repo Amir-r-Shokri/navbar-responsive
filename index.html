@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVA STUDIO</title>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap icons & Google font -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav-bar" id="navbar">
+    <div class="left-nav">
+      <h1>NOVA-STUDIO</h1>
+    </div>
+    <div class="center-nav">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Skills</a></li>
+      </ul>
+    </div>
+    <div class="right-nav">
+      <p>Online</p>
+      <i class="bi bi-person-circle"></i>
+    </div>
+  </nav>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <div class="bottom-nav">
+    <a href="#" title="Dashboard"><i class="bi bi-grid-fill"></i></a>
+    <a href="#" title="About"><i class="bi bi-info-circle-fill"></i></a>
+    <a href="#" title="Contact"><i class="bi bi-envelope-fill"></i></a>
+    <a href="#" title="Skills"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="#" title="Profile"><i class="bi bi-person-circle"></i></a>
+  </div>
+
+  <!-- Dummy content -->
+  <div style="height:3000px;"></div>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+</html>
